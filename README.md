@@ -1,6 +1,7 @@
 # SeismicExcel
 
-`SeismicExcel` is an Excel-DNA add-in for Excel that exposes utility and test user-defined functions (UDFs) for geophysical analysis workflows. The project targets `.NET Framework 4.8` and currently includes library helpers, environment diagnostics, and validation functions for integration components such as `SharpProj`.
+`SeismicExcel` is an Excel-DNA add-in for Excel that exposes user-defined functions (UDFs) for geophysical analysis workflows. 
+The project targets `.NET Framework 4.8` and contains a set of functions as described below.
 
 
 
@@ -47,7 +48,16 @@
 
 
 
+### `ray - ray tracing functions`
+
+| Function | Description |
+| --- | --- |
+| `SE.ray.parameter` | Return ray parameter (slowness) in [s/m] from P-wave velocity and angle in degrees.|
+| `SE.ray.segment`   | Return cumulative horizontal ray offsets for the supplied (resampled) depths.        |
+
+
 ### `tpr - taper functions`
+
 
 | Function | Description |
 | --- | --- |
